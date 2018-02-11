@@ -1,0 +1,22 @@
+CREATE TABLE users (
+    id        	varchar(128) PRIMARY KEY,
+    name       	text NOT NULL,
+    picture     text,
+    email   		text,
+    other				json
+); // done
+
+CREATE TABLE reservations (
+		id          SERIAL PRIMARY KEY,
+		uid					varchar(128) NOT NULL,
+		day					varchar(3) NOT NULL,
+		hour				varchar(15) NOT NULL,
+		group				varchar(25) NOT NULL
+);
+
+
+CREATE TABLE user_stats (
+		uid					varchar(128) PRIMARY KEY,
+		last_seen		timestamp?
+		stats       json
+);
