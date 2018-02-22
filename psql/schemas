@@ -8,10 +8,11 @@ CREATE TABLE users (
 
 CREATE TABLE reservations (
 		id          SERIAL PRIMARY KEY,
-		uid					varchar(128) NOT NULL,
-		day					varchar(3) NOT NULL,
-		hour				varchar(15) NOT NULL,
-		group				varchar(25) NOT NULL
+		uid			varchar(128) NOT NULL,
+		date		varchar(6) NOT NULL,
+		day			varchar(3) NOT NULL,
+		hour		varchar(15) NOT NULL,
+		group		varchar(25) NOT NULL
 );
 
 
